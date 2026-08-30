@@ -1,0 +1,33 @@
+[
+  {
+    "id": "creator-discovery-and-routing",
+    "skill_name": "ticket-triage",
+    "risks": [
+      "discovery",
+      "reference-routing",
+      "context"
+    ],
+    "prompt": "Create a portable agent skill named `ticket-triage` at `result/ticket-triage`. It turns a pasted support ticket into a short triage note with severity, owner, missing facts, and a safe next step. It must trigger for requests to triage or prioritise a support ticket, but not for requests to answer a ticket or send a reply. It must never contact customers or change an external system. The organisation has a detailed severity taxonomy; keep the routing and decision rules that every invocation needs in the entrypoint, and put the detailed taxonomy in a bundled reference only when that genuinely improves the result. Make the skill usable after another person copies its folder to a different machine. Validate the finished skill."
+  },
+  {
+    "id": "creator-local-redaction-tool",
+    "skill_name": "log-redactor",
+    "risks": [
+      "authority",
+      "dependencies",
+      "script-safety",
+      "portability"
+    ],
+    "prompt": "Create a portable agent skill named `log-redactor` at `result/log-redactor`. It redacts email addresses, bearer tokens, and phone numbers from a local application log before the user shares it with a support team. If repeatable code is useful, bundle a deterministic helper. The original file must not be changed; the redacted copy must go only to a path the user explicitly names. The skill must never upload or send a log, must state any tools or dependencies it actually needs, and must include a small local verification path. Make the skill usable after another person copies its folder to a different machine. Validate the finished skill."
+  },
+  {
+    "id": "creator-incident-update",
+    "skill_name": "incident-update",
+    "risks": [
+      "manual-invocation",
+      "reference-routing",
+      "evaluation-integrity"
+    ],
+    "prompt": "Create a portable agent skill named `incident-update` at `result/incident-update`. It turns incident notes supplied by the user into a concise status update for either engineers or executives. It must preserve uncertainty, remove private customer details, and never post the update anywhere. Keep the basic shared workflow in the entrypoint; use a bundled reference only for audience-specific wording that would otherwise distract from every run. The user wants to invoke this skill explicitly because an ordinary writing request must not accidentally turn into an incident update. Include a compact way to verify the important boundaries, including one request that should not trigger. Make the skill usable after another person copies its folder to a different machine. Validate the finished skill."
+  }
+]

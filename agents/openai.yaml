@@ -1,0 +1,7 @@
+interface:
+  display_name: "Skill Forge"
+  short_description: "Create skills that avoid common creator pitfalls"
+  default_prompt: "Use $skill-forge to create or inspect a portable skill without repeating common creator pitfalls."
+
+policy:
+  allow_implicit_invocation: false

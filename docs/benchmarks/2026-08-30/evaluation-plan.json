@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "candidate": "skill-forge staged release",
+  "baseline": "Codex bundled skill-creator",
+  "worker": {
+    "host": "codex",
+    "model": "gpt-5.6-terra",
+    "reasoning_effort": "xhigh"
+  },
+  "cases": [
+    "creator-discovery-and-routing",
+    "creator-local-redaction-tool",
+    "creator-incident-update"
+  ],
+  "repeats_per_case_and_condition": 3,
+  "conditions": [
+    "baseline",
+    "with_skill"
+  ],
+  "isolation": "fresh Codex execution and empty workspace per run; one concurrent run",
+  "assertions": [
+    "SKILL.md entrypoint exists",
+    "zero errors from Skill Forge static scanner",
+    "description is within host limit",
+    "local links and text routes resolve",
+    "no undeclared Python dependency",
+    "no secret-like value"
+  ],
+  "additional_smoke_test": "each generated log-redactor is run against the same local fixture; source preservation, output creation, redaction, and ordinary-content preservation are checked",
+  "judge": "none; all published comparisons are deterministic",
+  "timeout_seconds": 300
+}

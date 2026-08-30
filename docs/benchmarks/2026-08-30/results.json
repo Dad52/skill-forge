@@ -1,0 +1,1109 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-08-30",
+  "worker": {
+    "host": "codex",
+    "model": "gpt-5.6-terra",
+    "reasoning_effort": "xhigh"
+  },
+  "groups": {
+    "skill-forge:codex:baseline": {
+      "runs": 9,
+      "status_counts": {
+        "pass": 9
+      },
+      "wall_time_seconds": {
+        "median": 69.988,
+        "p90_nearest_rank": 104.465
+      },
+      "output_tokens": {
+        "median": 4605.0,
+        "p90_nearest_rank": 7295.0
+      },
+      "input_tokens": {
+        "median": 248555.0,
+        "p90_nearest_rank": 279254.0
+      },
+      "assertions": {
+        "description_within_host_limit": {
+          "pass": 9
+        },
+        "entrypoint_exists": {
+          "pass": 9
+        },
+        "local_routes_resolve": {
+          "pass": 9
+        },
+        "no_secret_like_value": {
+          "pass": 9
+        },
+        "no_static_errors": {
+          "pass": 9
+        },
+        "no_undeclared_python_dependency": {
+          "pass": 9
+        }
+      }
+    },
+    "skill-forge:codex:with_skill": {
+      "runs": 9,
+      "status_counts": {
+        "pass": 9
+      },
+      "wall_time_seconds": {
+        "median": 81.974,
+        "p90_nearest_rank": 123.632
+      },
+      "output_tokens": {
+        "median": 5389.0,
+        "p90_nearest_rank": 8559.0
+      },
+      "input_tokens": {
+        "median": 295234.0,
+        "p90_nearest_rank": 508689.0
+      },
+      "assertions": {
+        "description_within_host_limit": {
+          "pass": 9
+        },
+        "entrypoint_exists": {
+          "pass": 9
+        },
+        "local_routes_resolve": {
+          "pass": 9
+        },
+        "no_secret_like_value": {
+          "pass": 9
+        },
+        "no_static_errors": {
+          "pass": 9
+        },
+        "no_undeclared_python_dependency": {
+          "pass": 9
+        }
+      }
+    }
+  },
+  "records": [
+    {
+      "suite": "skill-forge",
+      "host": "codex",
+      "condition": "baseline",
+      "case_id": "creator-discovery-and-routing",
+      "repeat": 1,
+      "status": "pass",
+      "attempts": [
+        {
+          "returncode": 0,
+          "timed_out": false,
+          "wall_time_seconds": 69.988
+        }
+      ],
+      "wall_time_seconds": 69.988,
+      "tokens": {
+        "input_tokens": 227995,
+        "cached_input_tokens": 190720,
+        "reasoning_tokens": "unknown",
+        "output_tokens": 4605,
+        "total_tokens": "unknown"
+      },
+      "assertions": [
+        {
+          "assertion_id": "entrypoint_exists",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_static_errors",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "description_within_host_limit",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "local_routes_resolve",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_undeclared_python_dependency",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_secret_like_value",
+          "outcome": "pass"
+        }
+      ],
+      "static_summary": {
+        "errors": 0,
+        "warnings": 0,
+        "info": 0,
+        "by_category": {}
+      },
+      "final_sha256": "69c1e367e6eaceb4bb40fe01b1c43650ffc97aa967649ed240c3b39095ba0b99"
+    },
+    {
+      "suite": "skill-forge",
+      "host": "codex",
+      "condition": "baseline",
+      "case_id": "creator-discovery-and-routing",
+      "repeat": 2,
+      "status": "pass",
+      "attempts": [
+        {
+          "returncode": 0,
+          "timed_out": false,
+          "wall_time_seconds": 71.699
+        }
+      ],
+      "wall_time_seconds": 71.699,
+      "tokens": {
+        "input_tokens": 253087,
+        "cached_input_tokens": 222208,
+        "reasoning_tokens": "unknown",
+        "output_tokens": 4576,
+        "total_tokens": "unknown"
+      },
+      "assertions": [
+        {
+          "assertion_id": "entrypoint_exists",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_static_errors",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "description_within_host_limit",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "local_routes_resolve",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_undeclared_python_dependency",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_secret_like_value",
+          "outcome": "pass"
+        }
+      ],
+      "static_summary": {
+        "errors": 0,
+        "warnings": 0,
+        "info": 0,
+        "by_category": {}
+      },
+      "final_sha256": "4958f8caac9c66735a27bb6cb6e19230a34a1fc1dc5b8ef3f5037c5a7e92ddcc"
+    },
+    {
+      "suite": "skill-forge",
+      "host": "codex",
+      "condition": "baseline",
+      "case_id": "creator-discovery-and-routing",
+      "repeat": 3,
+      "status": "pass",
+      "attempts": [
+        {
+          "returncode": 0,
+          "timed_out": false,
+          "wall_time_seconds": 66.772
+        }
+      ],
+      "wall_time_seconds": 66.772,
+      "tokens": {
+        "input_tokens": 230068,
+        "cached_input_tokens": 204800,
+        "reasoning_tokens": "unknown",
+        "output_tokens": 4641,
+        "total_tokens": "unknown"
+      },
+      "assertions": [
+        {
+          "assertion_id": "entrypoint_exists",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_static_errors",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "description_within_host_limit",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "local_routes_resolve",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_undeclared_python_dependency",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_secret_like_value",
+          "outcome": "pass"
+        }
+      ],
+      "static_summary": {
+        "errors": 0,
+        "warnings": 0,
+        "info": 0,
+        "by_category": {}
+      },
+      "final_sha256": "628f0c00569e5e4139167be5825fc9efc6cb7119c486d9397b1efdec666260d7"
+    },
+    {
+      "suite": "skill-forge",
+      "host": "codex",
+      "condition": "with_skill",
+      "case_id": "creator-discovery-and-routing",
+      "repeat": 1,
+      "status": "pass",
+      "attempts": [
+        {
+          "returncode": 0,
+          "timed_out": false,
+          "wall_time_seconds": 95.46
+        }
+      ],
+      "wall_time_seconds": 95.46,
+      "tokens": {
+        "input_tokens": 309990,
+        "cached_input_tokens": 280832,
+        "reasoning_tokens": "unknown",
+        "output_tokens": 6363,
+        "total_tokens": "unknown"
+      },
+      "assertions": [
+        {
+          "assertion_id": "entrypoint_exists",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_static_errors",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "description_within_host_limit",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "local_routes_resolve",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_undeclared_python_dependency",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_secret_like_value",
+          "outcome": "pass"
+        }
+      ],
+      "static_summary": {
+        "errors": 0,
+        "warnings": 1,
+        "info": 0,
+        "by_category": {
+          "ownership": 1
+        }
+      },
+      "final_sha256": "52432abefa9f7468c80b46804c351285b1e8ca81d3dd118d01d3bf5a06fdc663"
+    },
+    {
+      "suite": "skill-forge",
+      "host": "codex",
+      "condition": "with_skill",
+      "case_id": "creator-discovery-and-routing",
+      "repeat": 2,
+      "status": "pass",
+      "attempts": [
+        {
+          "returncode": 0,
+          "timed_out": false,
+          "wall_time_seconds": 78.301
+        }
+      ],
+      "wall_time_seconds": 78.301,
+      "tokens": {
+        "input_tokens": 287864,
+        "cached_input_tokens": 258560,
+        "reasoning_tokens": "unknown",
+        "output_tokens": 5110,
+        "total_tokens": "unknown"
+      },
+      "assertions": [
+        {
+          "assertion_id": "entrypoint_exists",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_static_errors",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "description_within_host_limit",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "local_routes_resolve",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_undeclared_python_dependency",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_secret_like_value",
+          "outcome": "pass"
+        }
+      ],
+      "static_summary": {
+        "errors": 0,
+        "warnings": 0,
+        "info": 0,
+        "by_category": {}
+      },
+      "final_sha256": "0fee6f2e52c8c72e5c25fe220331ef77034f5c1ca6a4ae795a2e54e8babe8f58"
+    },
+    {
+      "suite": "skill-forge",
+      "host": "codex",
+      "condition": "with_skill",
+      "case_id": "creator-discovery-and-routing",
+      "repeat": 3,
+      "status": "pass",
+      "attempts": [
+        {
+          "returncode": 0,
+          "timed_out": false,
+          "wall_time_seconds": 67.904
+        }
+      ],
+      "wall_time_seconds": 67.904,
+      "tokens": {
+        "input_tokens": 256835,
+        "cached_input_tokens": 229120,
+        "reasoning_tokens": "unknown",
+        "output_tokens": 4579,
+        "total_tokens": "unknown"
+      },
+      "assertions": [
+        {
+          "assertion_id": "entrypoint_exists",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_static_errors",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "description_within_host_limit",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "local_routes_resolve",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_undeclared_python_dependency",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_secret_like_value",
+          "outcome": "pass"
+        }
+      ],
+      "static_summary": {
+        "errors": 0,
+        "warnings": 1,
+        "info": 0,
+        "by_category": {
+          "ownership": 1
+        }
+      },
+      "final_sha256": "1ffcae8b56c6b43051ac81af861d3c637492a3a5538c2a21648bcbf66e5f972e"
+    },
+    {
+      "suite": "skill-forge",
+      "host": "codex",
+      "condition": "baseline",
+      "case_id": "creator-incident-update",
+      "repeat": 1,
+      "status": "pass",
+      "attempts": [
+        {
+          "returncode": 0,
+          "timed_out": false,
+          "wall_time_seconds": 54.951
+        }
+      ],
+      "wall_time_seconds": 54.951,
+      "tokens": {
+        "input_tokens": 253542,
+        "cached_input_tokens": 229120,
+        "reasoning_tokens": "unknown",
+        "output_tokens": 3309,
+        "total_tokens": "unknown"
+      },
+      "assertions": [
+        {
+          "assertion_id": "entrypoint_exists",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_static_errors",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "description_within_host_limit",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "local_routes_resolve",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_undeclared_python_dependency",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_secret_like_value",
+          "outcome": "pass"
+        }
+      ],
+      "static_summary": {
+        "errors": 0,
+        "warnings": 0,
+        "info": 0,
+        "by_category": {}
+      },
+      "final_sha256": "df8bd1865b7dedb596e20c4048f3a29b064738ddb4cab705d0e4495aa48baca8"
+    },
+    {
+      "suite": "skill-forge",
+      "host": "codex",
+      "condition": "baseline",
+      "case_id": "creator-incident-update",
+      "repeat": 2,
+      "status": "pass",
+      "attempts": [
+        {
+          "returncode": 0,
+          "timed_out": false,
+          "wall_time_seconds": 61.867
+        }
+      ],
+      "wall_time_seconds": 61.867,
+      "tokens": {
+        "input_tokens": 255119,
+        "cached_input_tokens": 230144,
+        "reasoning_tokens": "unknown",
+        "output_tokens": 3972,
+        "total_tokens": "unknown"
+      },
+      "assertions": [
+        {
+          "assertion_id": "entrypoint_exists",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_static_errors",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "description_within_host_limit",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "local_routes_resolve",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_undeclared_python_dependency",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_secret_like_value",
+          "outcome": "pass"
+        }
+      ],
+      "static_summary": {
+        "errors": 0,
+        "warnings": 1,
+        "info": 0,
+        "by_category": {
+          "metadata": 1
+        }
+      },
+      "final_sha256": "7e0333da3869877856100a93a0a2f3cf1705b7cf20640b744c6931204ed45479"
+    },
+    {
+      "suite": "skill-forge",
+      "host": "codex",
+      "condition": "baseline",
+      "case_id": "creator-incident-update",
+      "repeat": 3,
+      "status": "pass",
+      "attempts": [
+        {
+          "returncode": 0,
+          "timed_out": false,
+          "wall_time_seconds": 65.367
+        }
+      ],
+      "wall_time_seconds": 65.367,
+      "tokens": {
+        "input_tokens": 279254,
+        "cached_input_tokens": 249600,
+        "reasoning_tokens": "unknown",
+        "output_tokens": 4228,
+        "total_tokens": "unknown"
+      },
+      "assertions": [
+        {
+          "assertion_id": "entrypoint_exists",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_static_errors",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "description_within_host_limit",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "local_routes_resolve",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_undeclared_python_dependency",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_secret_like_value",
+          "outcome": "pass"
+        }
+      ],
+      "static_summary": {
+        "errors": 0,
+        "warnings": 0,
+        "info": 0,
+        "by_category": {}
+      },
+      "final_sha256": "9f136142f7f809bda5dd5d9f8c7582cf7ec90f5f342d83cc80b2059a6d8eb159"
+    },
+    {
+      "suite": "skill-forge",
+      "host": "codex",
+      "condition": "with_skill",
+      "case_id": "creator-incident-update",
+      "repeat": 1,
+      "status": "pass",
+      "attempts": [
+        {
+          "returncode": 0,
+          "timed_out": false,
+          "wall_time_seconds": 54.157
+        }
+      ],
+      "wall_time_seconds": 54.157,
+      "tokens": {
+        "input_tokens": 256177,
+        "cached_input_tokens": 218112,
+        "reasoning_tokens": "unknown",
+        "output_tokens": 3307,
+        "total_tokens": "unknown"
+      },
+      "assertions": [
+        {
+          "assertion_id": "entrypoint_exists",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_static_errors",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "description_within_host_limit",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "local_routes_resolve",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_undeclared_python_dependency",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_secret_like_value",
+          "outcome": "pass"
+        }
+      ],
+      "static_summary": {
+        "errors": 0,
+        "warnings": 0,
+        "info": 0,
+        "by_category": {}
+      },
+      "final_sha256": "ccf30054bd9ad4df0817993e71d90e0e0225ff4fb886bc7d27175131f8770ac4"
+    },
+    {
+      "suite": "skill-forge",
+      "host": "codex",
+      "condition": "with_skill",
+      "case_id": "creator-incident-update",
+      "repeat": 2,
+      "status": "pass",
+      "attempts": [
+        {
+          "returncode": 0,
+          "timed_out": false,
+          "wall_time_seconds": 66.772
+        }
+      ],
+      "wall_time_seconds": 66.772,
+      "tokens": {
+        "input_tokens": 295234,
+        "cached_input_tokens": 262656,
+        "reasoning_tokens": "unknown",
+        "output_tokens": 4227,
+        "total_tokens": "unknown"
+      },
+      "assertions": [
+        {
+          "assertion_id": "entrypoint_exists",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_static_errors",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "description_within_host_limit",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "local_routes_resolve",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_undeclared_python_dependency",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_secret_like_value",
+          "outcome": "pass"
+        }
+      ],
+      "static_summary": {
+        "errors": 0,
+        "warnings": 0,
+        "info": 0,
+        "by_category": {}
+      },
+      "final_sha256": "8256a7e4db8a8fee9649b90e13e7ec7bfcad1d99e059638977891d96c9fc64b2"
+    },
+    {
+      "suite": "skill-forge",
+      "host": "codex",
+      "condition": "with_skill",
+      "case_id": "creator-incident-update",
+      "repeat": 3,
+      "status": "pass",
+      "attempts": [
+        {
+          "returncode": 0,
+          "timed_out": false,
+          "wall_time_seconds": 81.974
+        }
+      ],
+      "wall_time_seconds": 81.974,
+      "tokens": {
+        "input_tokens": 301058,
+        "cached_input_tokens": 267776,
+        "reasoning_tokens": "unknown",
+        "output_tokens": 5389,
+        "total_tokens": "unknown"
+      },
+      "assertions": [
+        {
+          "assertion_id": "entrypoint_exists",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_static_errors",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "description_within_host_limit",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "local_routes_resolve",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_undeclared_python_dependency",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_secret_like_value",
+          "outcome": "pass"
+        }
+      ],
+      "static_summary": {
+        "errors": 0,
+        "warnings": 1,
+        "info": 0,
+        "by_category": {
+          "discovery": 1
+        }
+      },
+      "final_sha256": "dc56913de788669b8b09408f06a50aba4b20be86839297039ad3380e13a773ec"
+    },
+    {
+      "suite": "skill-forge",
+      "host": "codex",
+      "condition": "baseline",
+      "case_id": "creator-local-redaction-tool",
+      "repeat": 1,
+      "status": "pass",
+      "attempts": [
+        {
+          "returncode": 0,
+          "timed_out": false,
+          "wall_time_seconds": 76.543
+        }
+      ],
+      "wall_time_seconds": 76.543,
+      "tokens": {
+        "input_tokens": 158655,
+        "cached_input_tokens": 130816,
+        "reasoning_tokens": "unknown",
+        "output_tokens": 5644,
+        "total_tokens": "unknown"
+      },
+      "assertions": [
+        {
+          "assertion_id": "entrypoint_exists",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_static_errors",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "description_within_host_limit",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "local_routes_resolve",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_undeclared_python_dependency",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_secret_like_value",
+          "outcome": "pass"
+        }
+      ],
+      "static_summary": {
+        "errors": 0,
+        "warnings": 0,
+        "info": 0,
+        "by_category": {}
+      },
+      "final_sha256": "09f825c032bb72cd13266a030219a780f4efb2023508fb20368d8bdd42ac8156"
+    },
+    {
+      "suite": "skill-forge",
+      "host": "codex",
+      "condition": "baseline",
+      "case_id": "creator-local-redaction-tool",
+      "repeat": 2,
+      "status": "pass",
+      "attempts": [
+        {
+          "returncode": 0,
+          "timed_out": false,
+          "wall_time_seconds": 86.48
+        }
+      ],
+      "wall_time_seconds": 86.48,
+      "tokens": {
+        "input_tokens": 181008,
+        "cached_input_tokens": 155136,
+        "reasoning_tokens": "unknown",
+        "output_tokens": 6329,
+        "total_tokens": "unknown"
+      },
+      "assertions": [
+        {
+          "assertion_id": "entrypoint_exists",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_static_errors",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "description_within_host_limit",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "local_routes_resolve",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_undeclared_python_dependency",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_secret_like_value",
+          "outcome": "pass"
+        }
+      ],
+      "static_summary": {
+        "errors": 0,
+        "warnings": 0,
+        "info": 0,
+        "by_category": {}
+      },
+      "final_sha256": "c3dd03f3073adc1c9b643c4a27df86669db661b302a3e4782a977091e61cac70"
+    },
+    {
+      "suite": "skill-forge",
+      "host": "codex",
+      "condition": "baseline",
+      "case_id": "creator-local-redaction-tool",
+      "repeat": 3,
+      "status": "pass",
+      "attempts": [
+        {
+          "returncode": 0,
+          "timed_out": false,
+          "wall_time_seconds": 104.465
+        }
+      ],
+      "wall_time_seconds": 104.465,
+      "tokens": {
+        "input_tokens": 248555,
+        "cached_input_tokens": 220160,
+        "reasoning_tokens": "unknown",
+        "output_tokens": 7295,
+        "total_tokens": "unknown"
+      },
+      "assertions": [
+        {
+          "assertion_id": "entrypoint_exists",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_static_errors",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "description_within_host_limit",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "local_routes_resolve",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_undeclared_python_dependency",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_secret_like_value",
+          "outcome": "pass"
+        }
+      ],
+      "static_summary": {
+        "errors": 0,
+        "warnings": 0,
+        "info": 0,
+        "by_category": {}
+      },
+      "final_sha256": "3abb90ddd2597fd4d9aca14e7759fb97a46b17febe120ac48aeaf1aff76d991e"
+    },
+    {
+      "suite": "skill-forge",
+      "host": "codex",
+      "condition": "with_skill",
+      "case_id": "creator-local-redaction-tool",
+      "repeat": 1,
+      "status": "pass",
+      "attempts": [
+        {
+          "returncode": 0,
+          "timed_out": false,
+          "wall_time_seconds": 121.066
+        }
+      ],
+      "wall_time_seconds": 121.066,
+      "tokens": {
+        "input_tokens": 384908,
+        "cached_input_tokens": 355072,
+        "reasoning_tokens": "unknown",
+        "output_tokens": 7597,
+        "total_tokens": "unknown"
+      },
+      "assertions": [
+        {
+          "assertion_id": "entrypoint_exists",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_static_errors",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "description_within_host_limit",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "local_routes_resolve",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_undeclared_python_dependency",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_secret_like_value",
+          "outcome": "pass"
+        }
+      ],
+      "static_summary": {
+        "errors": 0,
+        "warnings": 0,
+        "info": 0,
+        "by_category": {}
+      },
+      "final_sha256": "a611903bd4c5c18856862feb913852e6c94a9fb60698f05d3490d19fc1791660"
+    },
+    {
+      "suite": "skill-forge",
+      "host": "codex",
+      "condition": "with_skill",
+      "case_id": "creator-local-redaction-tool",
+      "repeat": 2,
+      "status": "pass",
+      "attempts": [
+        {
+          "returncode": 0,
+          "timed_out": false,
+          "wall_time_seconds": 123.632
+        }
+      ],
+      "wall_time_seconds": 123.632,
+      "tokens": {
+        "input_tokens": 508689,
+        "cached_input_tokens": 472064,
+        "reasoning_tokens": "unknown",
+        "output_tokens": 8559,
+        "total_tokens": "unknown"
+      },
+      "assertions": [
+        {
+          "assertion_id": "entrypoint_exists",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_static_errors",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "description_within_host_limit",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "local_routes_resolve",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_undeclared_python_dependency",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_secret_like_value",
+          "outcome": "pass"
+        }
+      ],
+      "static_summary": {
+        "errors": 0,
+        "warnings": 0,
+        "info": 0,
+        "by_category": {}
+      },
+      "final_sha256": "8e08ed0b22e16e7e0584300e7ec3da44da23df41da1b14fc58b6093c94aa7d8f"
+    },
+    {
+      "suite": "skill-forge",
+      "host": "codex",
+      "condition": "with_skill",
+      "case_id": "creator-local-redaction-tool",
+      "repeat": 3,
+      "status": "pass",
+      "attempts": [
+        {
+          "returncode": 0,
+          "timed_out": false,
+          "wall_time_seconds": 106.585
+        }
+      ],
+      "wall_time_seconds": 106.585,
+      "tokens": {
+        "input_tokens": 238566,
+        "cached_input_tokens": 208896,
+        "reasoning_tokens": "unknown",
+        "output_tokens": 7889,
+        "total_tokens": "unknown"
+      },
+      "assertions": [
+        {
+          "assertion_id": "entrypoint_exists",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_static_errors",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "description_within_host_limit",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "local_routes_resolve",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_undeclared_python_dependency",
+          "outcome": "pass"
+        },
+        {
+          "assertion_id": "no_secret_like_value",
+          "outcome": "pass"
+        }
+      ],
+      "static_summary": {
+        "errors": 0,
+        "warnings": 0,
+        "info": 0,
+        "by_category": {}
+      },
+      "final_sha256": "452e3b122d3e359c2299202ac33fedb5ede2db7113cd4de0be6966f4e484d964"
+    }
+  ],
+  "artifact_hashes": {
+    "run_harness": "2ec266f68c87228ca4364db62066c32d330968f7fafd51f7a23d7d5c17cb75e6",
+    "creator_cases": "309fbbe742e81c72408539c0631c218c743d80fa5e13ce1265210fb87dba1af6"
+  }
+}
